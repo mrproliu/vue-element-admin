@@ -104,14 +104,20 @@ import waves from '@/directive/waves' // waves directive
 import Pagination from '@/components/Pagination' // secondary package based on el-pagination
 
 const wantStatusOptions = [
-  { key: 'NOT_EXECUTE', display_name: '未处理' },
-  { key: 'EXECUTED', display_name: '已处理' },
+  { key: 'NOT_EXECUTE', display_name: '已求片' },
+  { key: 'CONFIRMED', display_name: '已确认' },
+  { key: 'UPLOADING', display_name: '上传中' },
+  { key: 'EXECUTED', display_name: '已上传' },
+  { key: 'ABORT', display_name: '已驳回' },
   { key: '', display_name: '全部' }
 ]
 
 const studioStatusOptionsWithAll = [
-  { key: 'NOT_EXECUTE', display_name: '未处理' },
-  { key: 'EXECUTED', display_name: '已处理' }
+  { key: 'NOT_EXECUTE', display_name: '已求片' },
+  { key: 'CONFIRMED', display_name: '已确认' },
+  { key: 'UPLOADING', display_name: '上传中' },
+  { key: 'EXECUTED', display_name: '已上传' },
+  { key: 'ABORT', display_name: '已驳回' }
 ]
 
 // arr to obj, such as { CN : "China", US : "USA" }
